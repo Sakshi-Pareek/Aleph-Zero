@@ -523,12 +523,13 @@
 
 .eco_box {
     background: linear-gradient(90.25deg, #14202A 0.24%, rgba(20, 32, 42, 0) 99.79%);
-    border-width: 1px 1px 2px 1px;
+    border-width: 1px 1px 0px 1px;
     border-style: solid;
     border-color: #1B2B38;
     border-radius: 2px;
     cursor: pointer;
     height: 100%;
+    border-bottom: 3px solid var(--green-blue);
 }
 
 .mini_eco_box {
@@ -567,7 +568,7 @@
     right: -80px;
     transition: 500ms linear;
 }
-.eco_box:hover .card-slider-btn {
+.card-slider-btn:hover{
     right: 0;
 }
 
@@ -710,11 +711,9 @@ input[type=checkbox] {
         bottom: 0;
     }
     .link-btn {
-        background: #0F3034;
         border-radius: 30px 0px 0px 30px;
         width: 120px;
         height: 35px;
-        cursor: pointer;
     }
 }
 
