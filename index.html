@@ -19,7 +19,7 @@
   <link rel="shortcut icon" href="./assets/image/png/fav_icon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="overflow-hidden">
   <a href="#" id="scroll" style="display: none;"><span></span></a>
   <!-- -----------------preloader-------------- -->
   <div id="box"><img src="./assets/image/png/webLogo.png" alt="preloader" class="preloader_logo w-25" />
@@ -30,7 +30,7 @@
       <nav class="navbar navbar-expand-xl px-2">
         <div class="container-fluid py-3" data-aos="fade-down" data-duration="1000" data-aos-delay="1000">
           <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-            <img src="./assets/image/png/webLogo.png" alt="logo" class="w-75">
+            <img src="./assets/image/png/webLogo.png" alt="logo" class="w-75 logo_img">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -65,23 +65,28 @@
       </nav>
 
       <!-- --------hero-section--------- -->
-      <section class="my-lg-5 py-5">
+      <section class="my-lg-5 py-lg-5 py-4">
         <div class="container my_container">
-          <div class="row align-items-center justify-content-center flex-lg-row flex-column-reverse my-5">
-            <div class="col-10 col-md-5 col-lg-5 col-xl-3" data-aos="fade-right">
+          <div class="row align-items-center justify-content-center flex-lg-row flex-column-reverse my-lg-5 my-3">
+            <div class="col-12 col-md-10 col-lg-5 col-xl-3" data-aos="fade-right">
               <h2 class="ff_inter fw-bold fs_xl text-white mb-0 text-nowrap">Zero-knowledge<span
                   class="ff_inter fw-light fs_2xl ">,</span></h2>
               <h4 class="ff_inter fw-light fs_2xl text-white mb-4 text-nowrap"><span class="line">scalable</span> layer
                 1
               </h4>
-              <p class="ff_karla fw-light fs_8sm sky_blue mb-5">Aleph Zero is a layer 1 privacy-enhancing
+              <p class="ff_karla fw-light fs_8sm sky_blue mb-lg-5 mb-4">Aleph Zero is a layer 1 privacy-enhancing
                 blockchain that ensures scalability, low
                 transaction fees, instant finality, and optimal
                 security.</p>
-              <a href="#featured" target="_blank" class="start_btn"><img
-                  src="./assets/image/png/comma_vector.png" alt="vector" class="me-3">Start exploring</a>
+              <a href="#featured" class="start_btn"><span class="me-3"><svg width="16" height="22" viewBox="0 0 16 22"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.5078 0.0191746C6.47548 0.0191746 5.4979 0.214689 4.57507 0.605721C3.66787 0.996752 2.87408 1.53246 2.19369 2.21286C1.51329 2.89325 0.977578 3.68705 0.586547 4.59424C0.195516 5.51707 0 6.49465 0 7.52697V13.5332C0 14.5655 0.195516 15.5431 0.586547 16.4659C0.977578 17.3731 1.51329 18.1669 2.19369 18.8473C2.87408 19.5277 3.66787 20.0634 4.57507 20.4545C5.4979 20.8455 6.47548 21.041 7.5078 21.041C8.54012 21.041 9.5177 20.8455 10.4405 20.4545C11.3477 20.0634 12.1415 19.5277 12.8219 18.8473C13.5023 18.1669 14.038 17.3731 14.4291 16.4659C14.8201 15.5431 15.0156 14.5655 15.0156 13.5332V7.52697C15.0156 6.49465 14.8201 5.51707 14.4291 4.59424C14.038 3.68705 13.5023 2.89325 12.8219 2.21286C12.1415 1.53246 11.3477 0.996752 10.4405 0.605721C9.5177 0.214689 8.54012 0.0191746 7.5078 0.0191746ZM1.50156 7.52697C1.50156 6.69799 1.65797 5.91593 1.9708 5.18079C2.28362 4.46129 2.71376 3.82782 3.2612 3.28037C3.80864 2.73293 4.44212 2.3028 5.16161 1.98997C5.89675 1.67715 6.67881 1.52073 7.5078 1.52073C8.33679 1.52073 9.11885 1.67715 9.85399 1.98997C10.5735 2.3028 11.207 2.73293 11.7544 3.28037C12.3018 3.82782 12.732 4.46129 13.0448 5.18079C13.3576 5.91593 13.514 6.69799 13.514 7.52697V13.5332C13.514 14.3622 13.3576 15.1443 13.0448 15.8794C12.732 16.5989 12.3018 17.2324 11.7544 17.7798C11.207 18.3273 10.5735 18.7574 9.85399 19.0702C9.11885 19.383 8.33679 19.5395 7.5078 19.5395C6.67881 19.5395 5.89675 19.383 5.16161 19.0702C4.44212 18.7574 3.80864 18.3273 3.2612 17.7798C2.71376 17.2324 2.28362 16.5989 1.9708 15.8794C1.65797 15.1443 1.50156 14.3622 1.50156 13.5332V7.52697ZM6.75702 4.52386V7.52697H8.25858V4.52386H6.75702ZM6.75702 9.02853V14.7298L5.0443 12.9936L3.96506 14.0728L6.96818 17.076H8.04742L11.0505 14.0728L9.9713 12.9936L8.25858 14.7298V9.02853H6.75702Z"
+                      fill="#00CCAB" />
+                  </svg>
+                </span>Start exploring</a>
             </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-xl-0 mb-3" data-aos="fade-left">
+            <div class="col-12 col-md-10 col-lg-6 col-xl-6 mb-xl-0 mb-3" data-aos="fade-left">
               <img src="./assets/image/png/hero_img.png" alt="hero_img" class="w-100">
             </div>
           </div>
@@ -91,28 +96,28 @@
     <!-- ------Featured in------------- -->
     <section class="featured_layer py-lg-4 py-md-3 py-2" id="featured">
       <h6 class="ff_inter fw-light fs_sm text-white text-center mt-2"><span>Featured in</span></h6>
-      <div class="container my-lg-5 my-4" data-aos="zoom-in">
+      <div class="container custom_container my-lg-5 my-4" data-aos="zoom-in">
         <div class="logo_slider py-xl-5 py-md-4 py-3">
           <div class="px-4">
-            <img src="./assets/image/png/coinDesk.png" alt="slider_img" class="w-100">
+            <img src="./assets/image/png/coinDesk.png" alt="slider_img" class="w-100 width_150">
           </div>
           <div class="px-4">
-            <img src="./assets/image/png/point.png" alt="slider_img" class="w-100">
+            <img src="./assets/image/png/point.png" alt="slider_img" class="w-100 width_150">
           </div>
           <div class="px-4">
-            <img src="./assets/image/png/MAS.png" alt="slider_img" class="w-100 mt-3">
+            <img src="./assets/image/png/MAS.png" alt="slider_img" class="w-100 mt-3 width_150">
           </div>
           <div class="px-4">
-            <img src="./assets/image/png/blockworks.png" alt="slider_img" class="w-100">
+            <img src="./assets/image/png/blockworks.png" alt="slider_img" class="w-100 width_150">
           </div>
           <div class="px-4">
-            <img src="./assets/image/png/sifted.png" alt="slider_img" class="w-100">
+            <img src="./assets/image/png/sifted.png" alt="slider_img" class="w-100 width_150">
           </div>
           <div class="px-4">
-            <img src="./assets/image/png/my_company.png" alt="slider_img" class="w-100">
+            <img src="./assets/image/png/my_company.png" alt="slider_img" class="w-100 width_150">
           </div>
           <div class="px-4">
-            <img src="./assets/image/png/nasdaq.png" alt="slider_img" class="w-100">
+            <img src="./assets/image/png/nasdaq.png" alt="slider_img" class="w-100 width_150">
           </div>
         </div>
         <div class="border_bottom"></div>
@@ -120,7 +125,7 @@
     </section>
     <!-- --------card-section------ -->
     <section class="my-lg-5 my-md-2 my-3 pb-lg-5 pb-4" id="build">
-      <div class="container">
+      <div class="container custom_container">
         <div class="row align-items-center justify-content-center">
           <div class="col-12 col-md-6 col-lg-6" data-aos="fade-right" data-aos-offset="500" data-aos-duration="500">
             <div class="Infocard">
@@ -134,8 +139,14 @@
                   protocol, AlephBFT, and ink!, the Rust-based WASM
                   programming environment.</p>
                 <a href=""
-                  class="ff_inter fw-medium fs_5sm green_color d-flex justify-content-end d-inline-block">Deploy
-                  apps<img src="./assets/image/png/Vector_arrow.png" alt="arrow" class="w_30 ms-3">
+                  class="ff_inter fw-medium fs_5sm green_color d-flex justify-content-end d-inline-block arrow_btn">Deploy
+                  apps<span class="ms-2"><svg width="20" height="13" viewBox="0 0 20 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6483 1.24306L14.1321 0.703438L13.0529 1.78268L17.3229 6.02928H0.359985V7.53084H17.3229L13.0529 11.7774L14.1321 12.8567L19.6691 7.31969C19.8099 7.16327 19.8803 6.9834 19.8803 6.78006C19.8803 6.57673 19.8099 6.39685 19.6691 6.24044L14.6483 1.24306Z"
+                        fill="#00CCAB" />
+                    </svg></span>
+
                 </a>
               </div>
             </div>
@@ -149,10 +160,16 @@
                     class="fw-light fs_4md cardLine"> easy</span></h4>
                 <p class="ff_karla fw-light fs_6sm sky_blue mt-3 mb-4 pb-3">Stake your AZERO with a trusted network of
                   validators—or
-                  help scale it more secure for everyone
+                  help scale Aleph Zero and make it more secure for everyone
                   involved by becoming one yourself.</p>
-                <a href="" class="ff_inter fw-medium fs_5sm green_color d-flex justify-content-end">Validate and
-                  nominate<img src="./assets/image/png/Vector_arrow.png" alt="arrow" class="w_30 ms-3">
+                <a href="" class="ff_inter fw-medium fs_5sm green_color d-flex justify-content-end arrow_btn">Validate
+                  and
+                  nominate<span class="ms-2"><svg width="20" height="13" viewBox="0 0 20 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6483 1.24306L14.1321 0.703438L13.0529 1.78268L17.3229 6.02928H0.359985V7.53084H17.3229L13.0529 11.7774L14.1321 12.8567L19.6691 7.31969C19.8099 7.16327 19.8803 6.9834 19.8803 6.78006C19.8803 6.57673 19.8099 6.39685 19.6691 6.24044L14.6483 1.24306Z"
+                        fill="#00CCAB" />
+                    </svg></span>
                 </a>
               </div>
             </div>
@@ -162,7 +179,7 @@
     </section>
     <!--------------detail------------->
     <section>
-      <div class="container mt-5" data-aos="zoom-in">
+      <div class="container custom_container mt-5" data-aos="zoom-in">
         <div class="row">
           <div class="col-6 col-sm-6 col-md-3 col-lg-3">
             <div class="text-center">
@@ -193,7 +210,7 @@
     </section>
     <!-- ------------+/-?+-------- -->
     <section>
-      <div class="custom_container grident_bg d-flex justify-content-center pt-5">
+      <div class="custom_container container grident_bg d-flex justify-content-center pt-5">
         <div class="row">
           <div class="col-lg-6">
             <img src="./assets/image/png/sums_img.png" alt="sums_img" class="w_150 d-lg-block d-none">
@@ -202,19 +219,25 @@
             <div class="blockchain_card d-flex mt-2 row mx-sm-0 mx-3" data-aos="fade-left" data-aos-offset="500"
               data-aos-duration="500">
               <span class="col-sm-6 px-0 zoom">
-                <img src="./assets/image/png/card_img.png " alt="card_img" class="w-100 h-100">
+                <img src="./assets/image/png/card_img.png " alt="card_img" class="w-100 h-100 p-xl-0 p-4">
               </span>
               <div class="col-sm-6 ps-0">
                 <div class="d-flex">
                   <div class="block_line mx-4 mt-3"></div>
-                  <p class="ff_inter fw-light fs_3md max_w_238 mt-1 text-white mb-0">
+                  <p class="ff_inter fw-light fs_3md max_w_238 mt-1 text-white mb-3">
                     We're building a new
                     take on<span class="ff_inter fw-bold fs_2md"> blockchain infrastructure</span>
                   </p>
                 </div>
-                <a href="" class="d-flex align-items-center justify-content-end gap-2 mt-lg-4 mt-md-5">
-                  <p class="mb-0 ff_inter fw-medium fs_5sm green_color">Why Aleph Zero</p>
-                  <img src="./assets/image/png/Vector_arrow.png" alt="arrow" class="w_20 ms-3">
+                <a href=""
+                  class="d-flex align-items-center justify-content-end gap-2 mt-lg-4 mt-md-5 mb-3 ff_inter fw-medium fs_5sm green_color arrow_btn">
+                  Why Aleph Zero
+                  <span class="ms-2"><svg width="20" height="13" viewBox="0 0 20 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6483 1.24306L14.1321 0.703438L13.0529 1.78268L17.3229 6.02928H0.359985V7.53084H17.3229L13.0529 11.7774L14.1321 12.8567L19.6691 7.31969C19.8099 7.16327 19.8803 6.9834 19.8803 6.78006C19.8803 6.57673 19.8099 6.39685 19.6691 6.24044L14.6483 1.24306Z"
+                        fill="#00CCAB" />
+                    </svg></span>
                 </a>
               </div>
             </div>
@@ -224,13 +247,14 @@
     </section>
     <!-- -----------application------------ -->
     <section>
-      <div class="container my-5 py-5">
-        <div class="row align-items-center justify-content-lg-between justify-content-center mt-5">
+      <div class="container custom_container my-5 py- max_height overflow-hidden">
+        <div class="row align-items-center justify-content-lg-between justify-content-center mt-md-5 mt-3 ">
           <div class="col-12 col-lg-6" data-aos="fade-right">
             <img src="./assets/image/png/application_img.png" alt="image" class="w-100">
           </div>
           <div class="col-12 col-lg-5" data-aos="fade-left">
-            <h3 class="ff_inter fw-bold fs_3lg text-white">Applications <span class="fw-light fs_4lg">under</span></h3>
+            <h3 class="ff_inter fw-bold fs_3lg text-white mt-lg-0 mt-3">Applications <span
+                class="fw-light fs_4lg">under</span></h3>
             <h4 class="ff_inter fw-light fs_4lg text-white mb-5"><span class="bottom_line">development</span></h4>
             <p class="ff_karla fw-light fs_8md sky_blue mb-4 pb-1">With the mainnet launch, Aleph Zero has seen a
               notable initial adoption within the developer
@@ -245,25 +269,27 @@
       </div>
     </section>
     <!-- ---------------------network---------- -->
-    <section class="mt--2">
-      <div class="custom_container grident_bg d-flex justify-content-center pt-5">
+    <section>
+      <div class="custom_container container grident_bg d-flex justify-content-center pt-lg-5 pt-md-4 pt-3">
         <div class="row">
-          <div class="col-lg-6 px-0" data-aos="fade-right">
+          <div class="col-lg-6 px-0 z-2" data-aos="fade-right">
             <div class="blockchain_card d-flex mt-2 row mx-sm-0 mx-3 mb-3">
               <span class="col-sm-6 px-0 zoom">
-                <img src="./assets/image/png/network_card_img.png" alt="network_card_img" class="w-100">
+                <img src="./assets/image/png/network_card_img.png" alt="network_card_img"
+                  class="w-100 h-100 p-xl-0 p-4">
               </span>
               <div class="col-sm-6 ps-0">
                 <div class="d-flex">
                   <div class="block_line mx-4 mt-3"></div>
-                  <p class=" mb-0 ff_inter fw-light fs_3md max_w_238 mt-1 text-white">
+                  <p class=" mb-3 ff_inter fw-light fs_3md max_w_238 mt-1 text-white">
                     Curious about
                     <span class="ff_inter fw-bold fs_2md">
                       upcoming network upgrades?</span>
                   </p>
                 </div>
-                <a href="" class="d-flex align-items-center justify-content-end gap-2 mt-lg-4 mt-md-4 pt-md-2 mb-3">
-                  <p class="mb-0 ff_inter fw-medium fs_5sm green_blue">Go to the roadmap</p>
+                <a href=""
+                  class="d-flex align-items-center justify-content-end gap-2 mb-0 ff_inter fw-medium fs_5sm green_color mt-lg-4 mt-md-4 pt-md-2 mb-3 arrow_btn">
+                  Go to the roadmap
                   <span>
                     <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -275,8 +301,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <img src="./assets/image/png/network_layer.png" alt="layer" class="w-100 h-100 d-lg-block d-none">
+          <div class="col-lg-6 translate">
+            <img src="./assets/image/png/sum-right-img.png" alt="layer" class="w-100 h-100 d-lg-block d-none">
           </div>
         </div>
 
@@ -284,7 +310,7 @@
     </section>
     <!-- ------------adoption----------- -->
     <section>
-      <div class="container">
+      <div class="container custom_container">
         <div class="row align-items-center justify-content-lg-between justify-content-center">
           <div class="col-12 col-lg-5" data-aos="fade-right">
             <h4 class="ff_inter fw-bold fs_2lg text-white"><span class="fw-light fs_4lg bottom_line">Driving </span>Web3
@@ -332,7 +358,7 @@
     </section>
     <!-- ----------environment--------- -->
     <section>
-      <div class="custom_container grident_bg d-flex justify-content-center pt-5">
+      <div class="custom_container container grident_bg d-flex justify-content-center pt-lg-5 pt-md-4 pt-3">
         <div class="row">
           <div class="col-lg-6">
             <img src="./assets/image/png/last-left-img.png" alt="last" class="w_150 d-lg-block d-none">
@@ -341,7 +367,7 @@
             <div class="blockchain_card d-flex mt-2 row mx-sm-0 mx-3" data-aos="fade-left" data-aos-offset="500"
               data-aos-duration="500">
               <span class="col-sm-6 px-0 zoom">
-                <img src="./assets/image/png/environment_card_img.png" alt="card_img" class="w-100">
+                <img src="./assets/image/png/environment_card_img.png" alt="card_img" class="w-100 h-100 p-xl-0 p-4">
               </span>
               <div class="col-sm-6 ps-0">
                 <div class="d-flex">
@@ -351,9 +377,16 @@
                     to<span class="ff_inter fw-bold fs_2md"> care for the environment</span>
                   </p>
                 </div>
-                <a href="" class="d-flex align-items-center justify-content-end gap-2 mt-lg-4 mt-md-5">
-                  <p class="mb-0 ff_inter fw-medium fs_5sm green_color">Our carbon footprint</p>
-                  <img src="./assets/image/png/Vector_arrow.png" alt="arrow" class="w_20 ms-3">
+                <a href=""
+                  class="d-flex align-items-center justify-content-end gap-2 mt-lg-4 mt-md-5 mb-3 ff_inter fw-medium fs_5sm green_color arrow_btn">Our
+                  carbon footprint
+                  <span class="ms-2">
+                    <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6483 0.662983L14.1321 0.12336L13.0529 1.20261L17.3229 5.44921H0.359985V6.95077H17.3229L13.0529 11.1974L14.1321 12.2766L19.6691 6.73961C19.8099 6.5832 19.8803 6.40332 19.8803 6.19999C19.8803 5.99665 19.8099 5.81677 19.6691 5.66036L14.6483 0.662983Z"
+                        fill="#00CCAB" />
+                    </svg>
+                  </span>
                 </a>
               </div>
             </div>
@@ -363,9 +396,9 @@
     </section>
     <!-- ----------community--------- -->
     <section id="community">
-      <div class="container mt-5 pt-5">
+      <div class="custom_container container mt-lg-5 mt-md-4 mt-3 pt-lg-5 pt-md-4 pt-3">
         <div class="row align-items-center justify-content-center justify-content-lg-between">
-          <div class="col-12 col-lg-7" data-aos="zoom-in-up">
+          <div class="col-12 col-md-8 col-lg-6" data-aos="zoom-in-up">
             <img src="./assets/image/png/community_img.png" alt="community_img" class="w-100">
           </div>
           <div class="col-10 col-lg-5" data-aos="fade-left">
@@ -385,11 +418,11 @@
     <!-- -----------ecosystem---- -->
     <section class="eco_bg_layer my-5 py-5">
       <div class="container custom_container my-5 " data-aos="zoom-in">
-        <div class="ecosystem_slider gap -4 py-5">
+        <div class="ecosystem_slider my-5 py-5">
           <div class="px-2">
-            <div class="eco_box">
+            <div class="eco_box glass_effect position-relative">
               <img src="./assets/image/png/eco_img_1.png" alt="image" class="w-100">
-              <div class="mini_eco_box">
+              <div class="mini_eco_box mb-4">
                 <h4 class="ff_inter fw-bold fs_9sm text-white ms-3">
                   <span class="fw-light fs_1md ecoLine">AZERO</span>
                   wallet
@@ -399,31 +432,66 @@
                   able to hold, transfer, or stake your
                   AZERO coins.</p>
               </div>
+              <div class="card-slider-btn my-2 d-inline-block">
+                <div class="link-btn d-flex justify-content-center align-items-center">
+                  <div class="d-flex justify-content-center align-items-center ">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.3482 0.798513H16.0964C16.3153 0.798513 16.4952 0.868898 16.636 1.00967C16.7768 1.15044 16.8471 1.33032 16.8471 1.54929V7.29745H15.3456V3.35586L8.09587 10.6056L7.04008 9.54979L14.2898 2.30007H10.3482V0.798513ZM0.329987 2.53469C0.329987 2.33136 0.404283 2.15539 0.552874 2.0068C0.701466 1.85821 0.87743 1.78391 1.08077 1.78391H7.83779V3.28547H1.83155V15.8141H14.3602V9.80787H15.8617V16.5649C15.8617 16.7682 15.7875 16.9442 15.6389 17.0928C15.4903 17.2414 15.3143 17.3157 15.111 17.3157H1.08077C0.87743 17.3157 0.701466 17.2414 0.552874 17.0928C0.404283 16.9442 0.329987 16.7682 0.329987 16.5649V2.53469Z"
+                        fill="#00CCAB" />
+                    </svg>
+                    <a href="#" class="text-decoration-none mx-3 ff_inter fw-medium fs_6sm green_color">Go to</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="px-2">
-            <div class="eco_box">
+            <div class="eco_box glass_effect position-relative">
               <img src="./assets/image/png/eco_img_2.png" alt="image" class="w-100">
-              <div class="mini_eco_box">
-                <h4 class="ff_inter fw-bold fs_9sm text-white ms-3"><span class="fw-light fs_1md ecoLine">AZERO</span>
+              <div class="mini_eco_box mb-4">
+                <h4 class="ff_inter fw-bold fs_9sm text-white ms-3 text-nowrap"><span
+                    class="fw-light fs_1md ecoLine">AZERO</span>
                   explorer
                 </h4>
                 <p class="ff_karla fw-light fs_4sm sky_blue mt-2">Familiarize yourself with the Aleph
                   Zero explorer launched in
                   collaboration with Subscan.</p>
               </div>
+              <div class="card-slider-btn my-2 d-inline-block">
+                <div class="link-btn d-flex justify-content-center align-items-center">
+                  <div class="d-flex justify-content-center align-items-center ">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.3482 0.798513H16.0964C16.3153 0.798513 16.4952 0.868898 16.636 1.00967C16.7768 1.15044 16.8471 1.33032 16.8471 1.54929V7.29745H15.3456V3.35586L8.09587 10.6056L7.04008 9.54979L14.2898 2.30007H10.3482V0.798513ZM0.329987 2.53469C0.329987 2.33136 0.404283 2.15539 0.552874 2.0068C0.701466 1.85821 0.87743 1.78391 1.08077 1.78391H7.83779V3.28547H1.83155V15.8141H14.3602V9.80787H15.8617V16.5649C15.8617 16.7682 15.7875 16.9442 15.6389 17.0928C15.4903 17.2414 15.3143 17.3157 15.111 17.3157H1.08077C0.87743 17.3157 0.701466 17.2414 0.552874 17.0928C0.404283 16.9442 0.329987 16.7682 0.329987 16.5649V2.53469Z"
+                        fill="#00CCAB" />
+                    </svg>
+                    <a href="#" class="text-decoration-none mx-3 ff_inter fw-medium fs_6sm green_color">Go to</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="px-2">
-            <div class="eco_box">
+            <div class="eco_box glass_effect position-relative">
               <img src="./assets/image/png/eco_img_3.png" alt="image" class="w-100">
-              <div class="mini_eco_box">
+              <div class="mini_eco_box mb-4">
                 <h4 class="ff_inter fw-bold fs_9sm text-white ms-3"><span class="fw-light fs_1md ecoLine">AZERO</span>
                   utility
                 </h4>
                 <p class="ff_karla fw-light fs_4sm sky_blue mt-2">Learn more about the utility and
                   economics behind AZERO - Aleph
                   Zero's native coin..</p>
+              </div>
+              <div class="card-slider-btn my-2 d-inline-block">
+                <div class="link-btn d-flex justify-content-center align-items-center">
+                  <div class="d-flex justify-content-center align-items-center ">
+                    <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.5711 1.01284L14.0549 0.473213L12.9757 1.55246L17.2457 5.79906H0.282776V7.30062H17.2457L12.9757 11.5472L14.0549 12.6265L19.5919 7.08946C19.7327 6.93305 19.8031 6.75318 19.8031 6.54984C19.8031 6.3465 19.7327 6.16663 19.5919 6.01022L14.5711 1.01284Z" fill="#00CCAB"/>
+                      </svg>                   
+                    <a href="#" class="text-decoration-none mx-3 ff_inter fw-medium fs_6sm green_color">Go to</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -432,8 +500,8 @@
     </section>
     <!-- -------footer----------- -->
     <footer class="bg-color" id="content">
-      <div class="container">
-        <div class="row mb-5">
+      <div class="custom_container container">
+        <div class="row mb-5 justify-content-between">
           <div class="col-lg-4" data-aos="fade-right">
             <div class="d-flex align-items-center gap-2">
               <h6 class="text-white ff_inter fw-bold fs-3md mb-0"><span class="fw-light ecoLine">Be</span>
@@ -458,8 +526,13 @@
               </a>
             </div>
             <div class="d-flex align-items-baseline gap-3 mt-4">
-              <input type="checkbox" id="box_check" class="check_box">
-              <label for="box_check" class="ff_karla fw-medium fs_3sm sky_blue">
+              <div class="checkBox">
+                <label class="checkbox_bg">
+                  <input type="checkbox" id="box_check" checked="checked">
+                  <span class="checked_bg"></span>
+                </label>
+              </div>
+              <label for="box_check" class="ff_karla fw-light fs_3sm sky_blue">
                 I consent to receive commercial information in the
                 form of a newsletter sent to the e-mail address
                 provided by the Aleph Zero Foundation with
@@ -535,7 +608,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-8" data-aos="fade-left">
+          <div class="col-lg-7" data-aos="fade-left">
             <div class="row">
               <div class="col-3">
                 <ul>
@@ -711,8 +784,8 @@
           </div>
         </div>
       </div>
-  </div>
-  </footer>
+
+    </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

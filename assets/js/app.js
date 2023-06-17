@@ -14,7 +14,7 @@ $('.logo_slider').slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         infinite: true,
 
@@ -23,14 +23,14 @@ $('.logo_slider').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1
       }
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     }
@@ -39,58 +39,60 @@ $('.logo_slider').slick({
 // -----------adoption----------
 $('.vertical_slider').slick({
 
-  slidesToScroll:1,
+  slidesToScroll: 1,
+  // rtl:true,
   slidesToShow: 3,
   arrows: false,
   centerMode: true,
-  centerPadding:"128px",
+  centerPadding: "128px",
   focusOnSelect: true,
   dots: false,
   vertical: true,
   verticalSwiping: true,
-  infinite:true,
-  autoplay:true,
-      
-  });
-  // ---------ecosystem-slider--------
-  $('.ecosystem_slider').slick({
-    dots: false,
-    infinite: true,
-    autoplay: false,
-    speed: 0,
-    autoplaySpeed: 0,
-    arrows: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-  
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        }
+  infinite: true,
+  autoplay: true,
+
+});
+// ---------ecosystem-slider--------
+$('.ecosystem_slider').slick({
+  dots: false,
+  infinite: true,
+  autoplay: false,
+  centerMode: true,
+  centerPadding: "70px",
+  speed: 0,
+  autoplaySpeed: 0,
+  arrows: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
       }
-    ]
-  });
-  // ------------------backtotop---------------------
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    }
+  ]
+});
+// ------------------backtotop---------------------
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -114,3 +116,4 @@ setTimeout(() => {
 
   document.body.classList.remove("overflow-hidden");
 }, 2000);
+// -----------application_slider----------

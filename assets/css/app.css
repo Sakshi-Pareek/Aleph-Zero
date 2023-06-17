@@ -8,6 +8,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 /* -----------------preloader----------------- */
 #box {
     position: fixed;
@@ -18,7 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background:  var(--dark-green);
+    background: var(--dark-green);
     background-size: cover;
     z-index: 50;
 }
@@ -31,18 +32,23 @@
     padding-right: 12px !important;
 }
 
+
+
 .preloader_logo {
- 
+
     animation: preloader 2s linear infinite;
 }
+
 @keyframes preloader {
-    0%{
+    0% {
         transform: scale(1.3);
     }
-    50%{
+
+    50% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.3);
     }
 }
@@ -87,7 +93,7 @@
 }
 
 .explore_btn {
-    padding: 10px 28px !important   ;
+    padding: 10px 28px !important;
     background: var(--green-blue);
     border-radius: 48px;
     font-family: 'Inter', sans-serif;
@@ -125,6 +131,7 @@
     position: relative;
     transition: all .5s linear;
 }
+
 .navbar-toggler {
     border: none !important;
     transition: none !important;
@@ -165,10 +172,20 @@
 }
 
 .start_btn:hover {
-    opacity: 0.6;
+    background-color: var(--green-blue);
+    color: black;
+    box-shadow: 0px 4px 8px var(--green-blue);
 }
 
-.max_w_392 {
+.start_btn path {
+    transition: all .2s linear;
+}
+
+.start_btn:hover path {
+    fill: black;
+}
+
+.start_btn.svg path .max_w_392 {
     max-width: 392px;
 }
 
@@ -236,9 +253,6 @@
     padding: 26px 40px 36px 49px;
 }
 
-.w_30 {
-    max-width: 30px;
-}
 .minicard_hover {
     transform: translateY(0px);
     transition: all 150ms linear;
@@ -246,10 +260,24 @@
 
 .Infocard:hover .minicard_hover {
     transform: translateY(-10px);
-   
+
 }
-.Infocard:hover{
-    box-shadow: 2px 3px 5px  #00EAC7;
+
+.Infocard:hover {
+    box-shadow: 2px 3px 5px #00EAC7;
+    cursor: pointer;
+}
+
+.arrow_btn {
+    transition: all 300ms linear;
+}
+
+.arrow_btn:hover {
+    color: aqua;
+}
+
+.arrow_btn:hover path {
+    fill: aqua;
 }
 
 
@@ -335,7 +363,11 @@
 .blockchain_card {
     background: linear-gradient(#14202A 63%, #111B24 80%) !important;
     border: 1px solid #1B2B38;
+    cursor: pointer;
 
+}
+.blockchain_card:hover img {
+    transform: scale(1.1);
 }
 
 .block_line {
@@ -347,34 +379,17 @@
     position: absolute;
     border: 1px solid var(--green-blue);
     width: 2px;
-    height: 85px;
-    top: 0px;
+    height: 80px;
+    top: -9px;
     right: 0px;
 }
 
 .max_w_238 {
     max-width: 238px;
 }
-.w_150{
+
+.w_150 {
     width: 150%;
-}
-
-.infrastructure_img {
-    position: relative;
-}
-
-.infrastructure_img::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    background-image: url("../image/png/sums_img.png");
-    bottom: -2%;
-    width: 56%;
-    z-index: 0;
-    height: 298px;
-    background-repeat: no-repeat;
-    background-position: 0;
-    background-size: 100% 100%;
 }
 
 .max_w_300 {
@@ -410,9 +425,51 @@
     border-radius: 48px;
     transition: all 300ms linear;
 }
+
 .ecosystem_btn:hover {
-    opacity: 0.6;
+    background-color: var(--green-blue);
+    color: black;
+    box-shadow: 0px 4px 8px var(--green-blue);
 }
+
+.application_ani {
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translateY(200px);
+    overflow: auto;
+
+
+}
+
+.max_height {
+    max-height: 1000px;
+}
+
+@keyframes scroll {
+    0% {
+
+        transform: translateY(100%);
+    }
+
+    100% {
+
+        transform: translateY(-100%);
+    }
+
+    0% {
+
+        transform: translateY(100%);
+    }
+
+}
+
+/* --------network------------------- */
+.translate {
+    transform: translateX(-70px);
+}
+
 
 /* <!-- ------------adoption----------- --> */
 .slide_box {
@@ -423,7 +480,8 @@
     cursor: pointer;
     transition: all .3s linear;
 }
-.slide_box:hover{
+
+.slide_box:hover {
     transform: translateY(-5px);
 }
 
@@ -469,10 +527,17 @@
     border-style: solid;
     border-color: #1B2B38;
     border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
 }
 
 .mini_eco_box {
     padding: 30px 37px 12px 33px;
+    transition: all 300ms linear;
+}
+
+.mini_eco_box:hover {
+    transform: translateY(-10px);
 }
 
 .ecoLine {
@@ -488,10 +553,26 @@
     top: 2.4px;
     left: -16px;
 }
+.link-btn {
+    background: #0F3034;
+    border-radius: 48px 0px 0px 48px;
+    width: 125px;
+    height: 48px;
+    cursor: pointer;
+}
+.card-slider-btn {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0%;
+    right: -80px;
+    transition: 500ms linear;
+}
+.eco_box:hover .card-slider-btn {
+    right: 0;
+}
 
 
 /* -------------footer------------ */
-
 .email_box {
     background: #0F171F;
     border: 1px solid #16232E;
@@ -505,14 +586,6 @@
     color: #BCCBD6;
     padding-left: 11px;
     outline: none;
-}
-
-input[type=checkbox] {
-    accent-color: #00EAC7;
-}
-
-input[type=checkbox]:checked {
-    accent-color: #00EAC7;
 }
 
 .subscribe {
@@ -530,44 +603,118 @@ input[type=checkbox]:checked {
     padding: 16px 28px 42px 25px;
     border: 1px solid #1B2B38;
     border-radius: 2px;
+    cursor: pointer;
+    transition: all .2s linear;
 }
-.logo svg path{
+.footer_box:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 2px 4px var(--green-blue);
+}
+
+.logo svg path {
     transition: all 300ms linear;
 }
-.logo svg path:hover{
+
+.logo svg path:hover {
     fill: #00EAC7;
 }
-.logo svg{
-    transition: all 300ms linear;  
-}
-.logo svg:hover{
-    transform: translateY(-5px);
-}
-.footer_links{
+
+.logo svg {
     transition: all 300ms linear;
 }
-.footer_links:hover{
-color: var(--green-blue) !important;
+
+.logo svg:hover {
+    transform: translateY(-5px);
 }
-ol, ul {
-    padding-left: 0 !important;
+
+.footer_links {
+    transition: all 300ms linear;
 }
-.zoom{
+
+.footer_links:hover {
+    color: var(--green-blue) !important;
+}
+
+.zoom {
     overflow: hidden;
     margin: 0 auto;
 }
-.zoom>img{
+
+.zoom>img {
     width: 100%;
-    transition:0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
 
-.blockchain_card:hover img{
-    transform: scale(1.1);
+.ol,
+ul {
+    padding-left: 0 !important;
+}
+
+/* -------------checkbox_bg---------- */
+.checkbox_bg {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.checked_bg {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--darker-blue);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+}
+
+.checkbox_bg input:checked~.checked_bg {
+    background-color: #00EAC7;
+}
+
+.checked_bg:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox_bg input:checked~.checked_bg:after {
+    display: block;
+}
+
+.checkbox_bg .checked_bg:after {
+    left: 7px;
+    bottom: 5px;
+    width: 5px;
+    height: 10px;
+    border: 1px solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 @media (max-width:992px) {
- .minicard {
+    .minicard {
         padding: 16px 30px 26px 39px;
+    }
+
+    .translate {
+        transform: none;
+    }
+    .card-slider-btn {
+        bottom: 0;
+    }
+    .link-btn {
+        background: #0F3034;
+        border-radius: 30px 0px 0px 30px;
+        width: 120px;
+        height: 35px;
+        cursor: pointer;
     }
 }
 
@@ -581,8 +728,8 @@ ol, ul {
         left: -71px;
     }
 
-    .infrastructure_img::before {
-        display: none;
+    .h_md_75 {
+        height: 50%;
     }
 }
 
@@ -591,14 +738,31 @@ ol, ul {
         top: 2.4px;
         left: -66px;
     }
+
     #scroll {
         width: 35px;
         height: 35px;
     }
+
+    .community_line::before {
+        bottom: -15px;
+        left: -150px;
+    }
+
+    .navbar-toggler {
+        font-size: 14px !important;
+    }
 }
 
-@media (min-width:1700px) and (max-width:1920px) {
+@media (min-width:1800px) and (max-width:1920px) {
     .eco_bg_layer {
         background-size: 100% 100%;
     }
+}
+
+@media (max-width:600px) {
+    .logo_img {
+        width: 200px !important;
+    }
+
 }
