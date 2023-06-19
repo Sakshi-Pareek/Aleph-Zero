@@ -765,3 +765,24 @@ input[type=checkbox] {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slick-slider .slick-list {
+	transform:rotate(180deg);
+}
+
+.slick-slider .slick-slide {
+	transform:rotate(180deg);
+}
